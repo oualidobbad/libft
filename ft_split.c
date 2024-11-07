@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oualid <oualid@student.42.fr>              +#+  +:+       +#+        */
+/*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:05:59 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/05 00:23:03 by oualid           ###   ########.fr       */
+/*   Updated: 2024/11/07 09:11:12 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ static char	**ft_free(char **ptr, size_t index)
 		free(ptr[i]);
 		i++;
 	}
+	free(ptr);
 	return (NULL);
 }
 
@@ -99,9 +100,6 @@ char	**ft_split(const char *s, char c)
 	words = countword(s, c);
 	ptr = malloc((words + 1) * sizeof(char *));
 	if (!ptr)
-	{
-		free(ptr);
 		return (NULL);
-	}
 	return (ft_cut(ptr, 0, s, c));
 }

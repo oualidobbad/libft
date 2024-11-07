@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: oualid <oualid@student.42.fr>              +#+  +:+       +#+         #
+#    By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/03 15:23:59 by oobbad            #+#    #+#              #
-#    Updated: 2024/11/04 18:54:52 by oualid           ###   ########.fr        #
+#    Updated: 2024/11/07 09:13:26 by oobbad           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,8 +32,8 @@ BONUS=  ft_lstnew_bonus.c ft_lstadd_front_bonus.c \
 		ft_lstclear_bonus.c ft_lstiter_bonus.c \
 		ft_lstmap_bonus.c
 
-OBJ =  $(patsubst %.c,%.o,$(SRCS))
-OBJ_BONUS= $(patsubst %.c,%.o,$(BONUS))
+OBJ =  $(SRCS:.c=.o)
+OBJ_BONUS= $(BONUS:.c=.o)
 
 all: $(NAME)
 
