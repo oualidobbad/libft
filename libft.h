@@ -3,19 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oualid <oualid@student.42.fr>              +#+  +:+       +#+        */
+/*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:47:03 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/05 23:22:54 by oualid           ###   ########.fr       */
+/*   Updated: 2024/11/07 20:59:33 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <string.h>
 
 int					ft_isalpha(int c);
 int					ft_isalnum(int c);
