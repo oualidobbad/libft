@@ -6,7 +6,7 @@
 #    By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/03 15:23:59 by oobbad            #+#    #+#              #
-#    Updated: 2024/11/07 09:13:26 by oobbad           ###   ########.fr        #
+#    Updated: 2024/11/09 11:30:35 by oobbad           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,7 @@ $(NAME): $(OBJ)
 
 bonus: $(OBJ_BONUS)
 	ar rcs $(NAME) $(OBJ_BONUS)
+	touch bonus
 
 %.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@
