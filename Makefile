@@ -6,13 +6,13 @@
 #    By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/03 15:23:59 by oobbad            #+#    #+#              #
-#    Updated: 2024/11/09 11:30:35 by oobbad           ###   ########.fr        #
+#    Updated: 2024/11/10 12:16:58 by oobbad           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 
-FLAGS = -Wall -Wextra -Werror -I.
+FLAGS = -Wall -Wextra -Werror
 
 NAME = libft.a
 
@@ -55,5 +55,5 @@ fclean:
 
 re: fclean clean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean,re
 
