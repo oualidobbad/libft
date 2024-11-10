@@ -6,7 +6,7 @@
 #    By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/03 15:23:59 by oobbad            #+#    #+#              #
-#    Updated: 2024/11/10 12:16:58 by oobbad           ###   ########.fr        #
+#    Updated: 2024/11/10 12:28:55 by oobbad           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,10 +50,10 @@ bonus: $(OBJ_BONUS)
 clean:
 	rm -f $(OBJ) $(OBJ_BONUS)
 
-fclean:
-	rm -f $(NAME) $(OBJ) $(OBJ_BONUS)
+fclean: clean
+	rm -f $(NAME)
 
-re: fclean clean all
+re: fclean all
 
-.PHONY: all clean fclean,re
+.PHONY: all clean fclean re
 
