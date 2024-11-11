@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oualid <oualid@student.42.fr>              +#+  +:+       +#+        */
+/*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 09:16:37 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/05 23:19:26 by oualid           ###   ########.fr       */
+/*   Updated: 2024/11/11 00:25:46 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ char	*ft_strrchr(const char *s, int c)
 }
 // int main()
 // {
-// 	printf("%s ", ft_strrchr("aerefrrwwq", 'a'));
+// 	printf("%s ", strrchr(NULL, 'a'));
 // }

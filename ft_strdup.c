@@ -6,7 +6,7 @@
 /*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 22:38:11 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/02 20:55:01 by oobbad           ###   ########.fr       */
+/*   Updated: 2024/11/10 22:57:31 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,8 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
+//int main()
+//{
+//	printf ("%s", ft_strdup(NULL));
+//	//printf ("%s", strdup(NULL));
+//}

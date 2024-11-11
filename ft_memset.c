@@ -27,3 +27,9 @@ void	*ft_memset(void *str, int c, size_t len)
 	}
 	return (s);
 }
+//int main()
+//{
+//	char s[7] = "wali";
+
+//	printf("%s", (char *)ft_memset(s, '0', 3));
+//}

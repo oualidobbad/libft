@@ -6,7 +6,7 @@
 #    By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/03 15:23:59 by oobbad            #+#    #+#              #
-#    Updated: 2024/11/10 12:28:55 by oobbad           ###   ########.fr        #
+#    Updated: 2024/11/11 00:28:57 by oobbad           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,7 @@ bonus: $(OBJ_BONUS)
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(OBJ_BONUS)
+	rm -f $(OBJ) $(OBJ_BONUS) bonus
 
 fclean: clean
 	rm -f $(NAME)

@@ -6,7 +6,7 @@
 /*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 23:34:33 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/02 20:48:02 by oobbad           ###   ########.fr       */
+/*   Updated: 2024/11/11 15:14:46 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,11 @@ void	*ft_memmove(void *destination, const void *source, size_t size)
 		ft_memcpy(dest, src, size);
 	return (dest);
 }
+//int main()
+//{
+//	char	*des = NULL;
+//	char 	*src = "wafwe";
+
+//	printf("%s",(char *)memmove(des, src, 4));
+
+//}

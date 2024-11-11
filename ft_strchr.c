@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oualid <oualid@student.42.fr>              +#+  +:+       +#+        */
+/*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 17:58:19 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/04 11:19:32 by oualid           ###   ########.fr       */
+/*   Updated: 2024/11/10 23:01:30 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ char	*ft_strchr(const char *s, int c)
 }
 // int main()
 // {
-// 	printf("%s ", ft_strchr("helvvvo", 'p'));
+// 	printf("%s ", strchr("ewqwe", ' '));
+//	//printf("%s ", strchr(NULL, 'p'));
 // }

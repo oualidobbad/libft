@@ -6,7 +6,7 @@
 /*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 11:38:32 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/03 11:38:35 by oobbad           ###   ########.fr       */
+/*   Updated: 2024/11/11 14:25:46 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_lstsize(t_list *lst)
 	t_list	*ptr;
 	int		i;
 
+	if (!lst)
+		return (0);
 	ptr = lst;
 	i = 0;
 	while (ptr != NULL)

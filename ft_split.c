@@ -6,7 +6,7 @@
 /*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:05:59 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/07 09:11:12 by oobbad           ###   ########.fr       */
+/*   Updated: 2024/11/10 23:03:30 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,8 @@ char	**ft_split(const char *s, char c)
 	char	**ptr;
 	size_t	words;
 
+	if (!s)
+		return (NULL);
 	words = countword(s, c);
 	ptr = malloc((words + 1) * sizeof(char *));
 	if (!ptr)

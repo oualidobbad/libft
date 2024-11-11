@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oualid <oualid@student.42.fr>              +#+  +:+       +#+        */
+/*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 12:01:34 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/04 20:23:46 by oualid           ###   ########.fr       */
+/*   Updated: 2024/11/11 15:06:00 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 // int main()
 // {
-// int a = 1111;
-// int b = 1111;
-// 	//printf("%d\n", ft_memcmp(&a, &b, 4 * sizeof(int)));
-// 	printf("%d\n", memcmp(&a, &b, 2 * sizeof(int)));
+// char *a = "obbad";
+// char *b = NULL;
+// 	printf("%d\n", ft_memcmp(a, b, 5));
+// 	//printf("%d\n", memcmp(a, b, 5 * sizeof(char)));
 // }

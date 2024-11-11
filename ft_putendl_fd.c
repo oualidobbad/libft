@@ -6,7 +6,7 @@
 /*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 16:11:50 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/02 20:50:03 by oobbad           ###   ########.fr       */
+/*   Updated: 2024/11/11 03:32:59 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putendl_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i])
 	{
 		write(fd, (s + i), 1);
@@ -28,5 +30,5 @@ void	ft_putendl_fd(char *s, int fd)
 // int main ()
 //{
 //	char *str = "walid";
-//	ft_putendl_fd(str,1);
+//	ft_putendl_fd(str,-1);
 //}
