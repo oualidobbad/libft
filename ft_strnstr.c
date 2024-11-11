@@ -6,7 +6,7 @@
 /*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 15:38:09 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/10 23:53:50 by oobbad           ###   ########.fr       */
+/*   Updated: 2024/11/11 16:03:58 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	if (!big)
-		return (NULL);
 	if (!little || little[0] == '\0')
 		return ((char *)big);
 	i = 0;

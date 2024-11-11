@@ -6,7 +6,7 @@
 /*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 09:16:37 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/11 00:25:46 by oobbad           ###   ########.fr       */
+/*   Updated: 2024/11/11 16:12:46 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,11 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	if (str[l] == (unsigned char)c)
 		return ((char *)str + l);
-	return (0);
+	return (NULL);
 }
+//#include <stdio.h>
+//#include <string.h>
 // int main()
 // {
-// 	printf("%s ", strrchr(NULL, 'a'));
+// 	printf("%s\n", strrchr("walid", ));
 // }
