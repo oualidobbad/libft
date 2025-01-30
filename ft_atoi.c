@@ -6,40 +6,35 @@
 /*   By: oobbad <oobbad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:24:30 by oobbad            #+#    #+#             */
-/*   Updated: 2024/11/11 13:29:01 by oobbad           ###   ########.fr       */
+/*   Updated: 2025/01/13 09:15:38 by oobbad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+long ft_atoi(char *nb, int *flag)
 {
-	int	i;
-	int	sign;
-	int	nb;
+	long n;
+	int i;
+	long sign;
 
+	n = 0;
 	i = 0;
 	sign = 1;
-	nb = 0;
-	while (str[i] && ((str[i] >= 9 && str[i] <= 13) || (str[i] == 32)))
-	{
+	while ((nb[i] >=9 && nb[i] <= 13) || nb[i] == 32)
 		i++;
-	}
-	if (str[i] == '+' || str[i] == '-')
+	if (nb[i] == '-' || nb[i] == '+')
 	{
-		if (str[i] == '-')
+		if (nb[i] == '-')
 			sign = -sign;
 		i++;
 	}
-	while (ft_isdigit(str[i]) == 1 && str[i])
+	while (nb[i]>= '0' && nb[i] <= '9')
 	{
-		nb = nb * 10 + (str[i] - 48);
+		n = n * 10 + (nb[i] - 48);
 		i++;
 	}
-	return (nb * sign);
+	if (!(nb[i]>= '0' && nb[i] <= '9') && nb[i])
+		*flag = 0;
+	return n * sign;
 }
-//int main()
-//{
-//	printf ("%d", atoi("0"));
-
-//}
